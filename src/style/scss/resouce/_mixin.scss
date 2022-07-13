@@ -1,0 +1,7 @@
+@use './color.scss';
+
+@mixin flex-box($alg-item : flex-start,$jst-content : center) {
+   display: flex;
+   align-items: $alg-item;
+   justify-content: $jst-content;
+}

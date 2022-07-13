@@ -1,0 +1,11 @@
+@use './resouce/reset.scss';
+
+@use './components/header.scss';
+@use './components/shelf-selector.scss';
+@use './components/list-book.scss';    
+@use './components/footer.scss';
+
+
+@use './components/alert.scss';
+@use './components/popup-add-book.scss';
+@use './components/popup-notification.scss';

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./src/style/css/index.css" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;600;700;800&family=Raleway:wght@600;700;800&display=swap"
+			rel="stylesheet"
+		/>
+		<script
+			src="https://kit.fontawesome.com/dbb51d6c8b.js"
+			crossorigin="anonymous"
+		></script>
+		<title>MyBookShelf</title>
+	</head>
+	<body>
+		<header class="header container">
+			<div class="icon-logo">
+				<i class="fa-solid fa-book-open-reader"></i>
+				<span>Book Shelf</span>
+			</div>
+			<form action="" class="form-search">
+				<input type="search" id="search" placeholder="Search">
+			</form>
+			<div class="container-btnAdd">
+				<button id="button-add-book" class="add-book">Tambah Buku</button>
+			</div>
+
+			<div class="alert-container hidden"></div>
+
+         <div class="popup-container hidden" id="popup-container"></div>
+		</header>
+
+		<main class="main container">
+			<div class="shelf-selector">
+				<label class="finished-read">
+					<input type="radio" checked name="shelf-selector" id="unfinished-read"/>
+					<div>Belum Selesai Dibaca</div>
+				</label>
+				<label class="unfinished-read">
+					<input type="radio"  name="shelf-selector" id="finished-read" />
+					<div>Selesai Dibaca</div>
+				</label>
+			</div>
+
+         <div class="book-container hidden" id="book-container"></div>
+		</main>
+
+      <footer>
+         <span>@copy Copyright (C) 2022 Create by Dewangga </span>
+      </footer>
+
+		<script src="./src/js/script.mjs" type="module"></script>
+	</body>
+</html>
+
+
+

@@ -1,0 +1,77 @@
+@use '../resouce/mixin';
+
+.main{
+   .book-container{
+      margin-top: 25px;
+      min-height: max-content;
+      max-height: 365px;
+      padding: 20px;
+      width: 100%;
+      background: var(--gray-2);
+      box-shadow: 2px 2px 10px rgba(94, 94, 94, 0.349);
+      border-radius: 8px;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+      gap: 1.5rem;
+      overflow: auto;
+      .book{
+         position: relative;
+         border-radius: 5px;
+         background: var(--gray-1);
+         box-shadow: 2px 2px 10px rgba(151, 151, 151, 0.315);
+         padding: 10px;
+         p{
+            font-size: 0.9rem;
+            font-weight: 600;
+         }
+         .button-card{
+            @include mixin.flex-box(center);
+            flex-direction: column;
+            gap: 0.6rem;
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            transform: translateY(-50%);
+            button{
+               color: var(--blue);
+               font-size: 1.2rem;
+               background: transparent;
+               transition: .3s ease;
+            }
+            button:hover{
+               color: var(--blue-hover);
+            }
+            .button-delete{
+               color: var(--red);
+            }
+            .button-delete:hover{
+               color: var(--red-hover);
+            }
+            .button-chek{
+               color: var(--green);
+            }
+            .button-chek:hover{
+               color: var(--green-hover);
+            }
+         }
+      }
+   }
+}
+
+
+@media only screen and (max-width: 834px) {
+   .main{
+      .book-container{
+         min-height: max-content;
+         max-height: 715px;
+      }
+   }
+}
+@media only screen and (max-width: 412px) {
+   .main{
+      .book-container{
+         min-height: max-content;
+         max-height: 480px;
+      }
+   }
+}

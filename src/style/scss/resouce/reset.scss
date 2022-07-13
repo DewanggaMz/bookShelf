@@ -1,0 +1,79 @@
+@use "./color.scss";
+@use './font.scss';
+
+
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+:root{
+   --white : #{color.$white};
+   --black : #{color.$black};
+   --color1 : #{color.$color1};
+   --color2 : #{color.$color2};
+   --color3 : #{color.$color3};
+   --gray-1 : #{color.$gray-1};
+   --gray-2 : #{color.$gray-2};
+   --gray-3 : #{color.$gray-3};
+   --gray-4 : #{color.$gray-4};
+   --green : #{color.$green};
+   --green-hover :  #{color.$green-hover};
+   --blue : #{color.$blue};
+   --blue-hover : #{color.$blue-hover};
+   --red-hover : #{color.$red-hover};
+   --red : #{color.$red};
+}
+html{
+   scroll-behavior: smooth;
+   font-family: font.$nunito;
+}
+::-webkit-scrollbar {
+	width: 9px;
+}
+::-webkit-scrollbar-track {
+	background: var(--gray-2)
+}
+::-webkit-scrollbar-thumb {
+	background: var(--color1);
+	border-radius: 30px;
+}
+body{
+   background: var(--gray-1); 
+   height: 100vh;
+   max-height: 100vh;
+   position: relative;
+   overflow-x: hidden;
+}
+button{
+   outline:none;
+   border: none;
+   font-weight: 700;
+   font-size: 0.9rem;
+   cursor: pointer;
+}
+a{
+   text-decoration: none;
+}
+li{
+   list-style: none;
+}
+
+input{
+   font-family: font.$nunito;
+   border: none;
+   outline: none;
+}
+
+
+//  ::selection{
+//    background: rgb(175, 0, 175);
+//    color: white;
+//  }
+
+.container {
+	padding: 0 5%;
+}
+.hidden{
+   display: none !important;
+}
